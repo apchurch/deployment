@@ -31,4 +31,5 @@ httpApp.use(function(req, res){
     console.log(req.url)
     res.redirect('138.197.237.7' + req.url)
 })
-httpApp.listen(80)
+// httpApp.listen(80)
+httpServer.listen(80)
