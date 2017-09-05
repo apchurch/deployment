@@ -29,7 +29,7 @@ app.get('/', function(req, res){
 var httpApp = express()
 httpApp.use(function(req, res){
     console.log(req.url)
-    res.redirect('http://138.68.48.123/' + req.url)
+    res.redirect('http://138.68.48.123' + req.url)
 })
 httpApp.listen(80)
 // httpServer.listen(80)
