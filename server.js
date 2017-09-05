@@ -26,10 +26,10 @@ app.get('/', function(req, res){
 //     console.log('this code runs regardless of whether the above code succeeded or failed')
 // }
 
-var httpApp = express()
-httpApp.use(function(req, res){
-    console.log(req.url)
-    res.redirect('138.68.36.26' + req.url)
-})
+// var httpApp = express()
+// httpApp.use(function(req, res){
+//     console.log(req.url)
+//     res.redirect('138.68.36.26' + req.url)
+// })
 // httpApp.listen(80)
 httpServer.listen(80)
