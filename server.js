@@ -7,7 +7,7 @@ var fs = require('fs')
 
 app.get('/', function(req, res){
     console.log("we're logging on the server!")
-    res.send("<h1>Welcome to the internet!</h1>")
+    res.send("<h1>Andrew's deployment app</h1>")
 })
 
 // try {
@@ -29,6 +29,6 @@ app.get('/', function(req, res){
 var httpApp = express()
 httpApp.use(function(req, res){
     console.log(req.url)
-    res.redirect('165.227.0.171' + req.url)
+    // res.redirect('165.227.0.171' + req.url)
 })
 httpApp.listen(80)
